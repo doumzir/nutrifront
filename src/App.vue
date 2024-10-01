@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterLink, RouterView } from 'vue-router';
+import FormCreateAccount from './components/FormCreateAccount.vue';
+import FormCreateAccountCoach from './components/FormCreateAccountCoach.vue';
+import HelloWorld from './components/HelloWorld.vue';
 </script>
 
 <template>
@@ -17,7 +19,11 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <main>
+    <RouterView />
+    <FormCreateAccount />
+    <FormCreateAccountCoach />
+  </main>
 </template>
 
 <style scoped>
